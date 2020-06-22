@@ -1,0 +1,548 @@
+html, body {
+  width: 100%;
+  height: 100%;
+
+}
+body {
+  background: #ffffff;
+  margin: 0;
+  font-family: SF UI Text;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+hr {
+  width: 100px;
+  height: 1px;
+  background-color: #D3C37B;
+  border: none;
+}
+
+/* SIZE IMG */
+img {
+  max-width: 100%;
+}
+
+/* SIZE LOGO */
+.image-logo {
+  width: 180px;
+  margin-top: 10px;
+}
+
+/* MAIN NAV */
+.main-nav {
+  background-color: white;
+  border-bottom: 0.05px solid #D3C37B;
+  position: fixed;
+  z-index: 2;
+  top : 0px;
+  width: 100%;
+}
+
+/* DESKTOP NAV LINK */
+.nav-links li {
+  font-size: 16px;
+  font-weight: 330;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 20px 50px 0px 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
+  padding: 0;
+}
+
+
+/* DESKTOP HOVER NAV LINK */
+.nav-links a:hover{
+  color: #C09628;
+  border-bottom: 5px solid #D3C37B;
+  padding-bottom: 10px;
+}
+
+/* SPACE BETWEEN BASKET AND PROFILE */
+#cart {
+  padding: 10px;
+}
+
+/* DISPLAY MOBILE */
+.secondary-nav, .hr-mobile, .container-histoire-resp, .responsive, .button-mobile {
+  display: none;
+}
+
+
+                      /* ANCHOR */
+
+.ancre {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  z-index: 2;
+}
+
+
+                      /* MAIN */
+
+/* DISCOUNT */
+.promo {
+  font-family: SF UI family;
+  background-color: #D3C37B;
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+
+}
+/* HEADBAND */
+header {
+  display: flex;
+  justify-content: center;
+}
+.headband {
+  background-image: url("../images/bandeau.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 300px;
+  margin: 240px 0px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* MOBILE HEADBAND */
+.titre-bandeau, .text-bandeau {
+  padding-bottom: 30px;
+}
+
+/* POSITION OF THE ELEMENTS ON THE HEADBAND */
+.text-promo {
+  background-color: rgba(255,255,255,.9);
+  padding: 15px;
+  border: 1px solid #C09628;
+  margin-right: 45px;
+}
+
+
+/* POSITION AND TYPO */
+.titre-bandeau {
+  font-family: Tangerine;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 0px;
+}
+
+.text-bandeau {
+  font-size: 15px;
+  font-weight: 330;
+}
+
+.button-bandeau {
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: #C09628;
+  border: 1px solid #C09628;
+  padding: 10px;
+}
+
+/* H2 */
+.creation, .explicit {
+  font-weight: 100;
+  text-align: center;
+}
+
+.creation {
+  font-family: Tangerine;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.explicit {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  padding: 20px 20px 70px 20px;
+}
+
+/* SIZE IMG DIV. MAIN */
+
+.container-product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+
+.imageMain{
+  width :100%;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+                      /* OVERLAY & PRODUCT */
+
+/* FONT */
+.tangerine {
+  font-family: Tangerine;
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.sf {
+  color: #696969;
+  font-family: SF UI Text;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.price {
+  font-family: SF UI Text;
+  font-size: 24px;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+/* FAVORITE */
+.fa-heart {
+  font-size: 25px;
+  color: #D3C37B;
+}
+
+.heart-macaron {
+  background-color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #D3C37B;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top:-5%;
+  left: 90%;
+  /* first plan */
+  z-index: 1;
+}
+
+/* STYLE AND POSITION */
+.imageMain .overlay {
+  border: 1px solid #D3C37B;
+  background-color: rgba(255,255,255,.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+/* OPACITY AND TRANSITION */
+.imageMain:hover .overlay {
+  opacity: 2;
+  transition: ease .4s;
+}
+
+/* LINK DECOUVRIR */
+.decouvrir a, .link-histoire{
+  color: #000000;
+  text-decoration: none;
+}
+
+.decouvrir a {
+  font-size: 20px;
+}
+
+.decouvrir a:hover {
+  color: #C09628;
+  font-size: 22px;
+}
+
+.decouvrir{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.link-histoire:hover, .decouvrir a:hover {
+  color: #C09628;
+  text-decoration: underline;
+}
+
+/* BUTTON */
+.add {
+  background-color: white;
+  border: 1px solid #C09628;
+  padding: 10px;
+  text-decoration: none;
+  color: #C09628;
+  font-size: 15px;
+}
+
+.add:hover {
+  background-color: #C09628;
+  color: white;
+}
+
+/* TRANSITION */
+.add:hover, .decouvrir a:hover {
+  transition: ease .2s;
+}
+
+/* POSITION DIV. MAIN */
+.top{
+  margin-right: 50px;
+  width: 25%;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+/* margin for last product */
+.top:last-of-type {
+  margin-right: 0px;
+}
+
+/* HISTORY */
+.h2-histoire, .link-histoire {
+  font-weight: 100;
+  text-align: center;
+  font-family: Tangerine;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.histoire {
+  width : 78%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 1px;
+}
+
+.container-histoire {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.container-histoire .overlay {
+  width: 100%;
+  height: 99.5%;
+}
+
+
+/* NEWSLETTER */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+
+.email{
+  width: 300px;
+}
+
+/* BORDER */
+.encadrement {
+  border: 1px solid #D3C37B;
+  width: 50%;
+}
+
+/* H3 STYLE */
+.h3 {
+  font-size: 22px;
+  font-weight: 330;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+/* CENTER POSITION */
+.h3, .champ {
+  display: flex;
+  justify-content: center;
+}
+
+/* STYLE champ */
+.champ {
+  padding-bottom: 90px;
+}
+
+input, textarea {
+  border: 1px solid #C09628;
+  margin-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* BUTTON STYLE  */
+.button-news, .button-send {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #C09628;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  height: 26px;
+}
+
+
+                      /* FOOTER */
+
+.containerfooter {
+  margin: 0;
+}
+
+/* POSITON OF LOGO */
+.footerLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 0.05px solid #D3C37B;
+  border-bottom: 0.05px solid #D3C37B;
+  font-size: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: 330;
+}
+
+/* ICON SIZE */
+.icone1 {
+  width: 52px;
+}
+.icone2 {
+  width: 100px;
+}
+.icone3 {
+  width: 45px;
+}
+.icone4 {
+  width: 67px;
+}
+
+/* TEXT SIZE */
+.text-icone {
+  text-align: center;
+}
+
+.icone1, .icone3, .icone4 {
+  padding-top: 10px;
+}
+.icone2 {
+  padding-top: 3px;
+}
+
+/* POSITION FOOTER LINK */
+.nav-links-footer li{
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CENTER THE "INFORMATION AND FOLLOW US" COLUMNS */
+.information, .suivre {
+  display: flex;
+  justify-content: center;
+}
+
+/* ALIGNMENT OF SOCIAL NETWORK ICONS */
+.imgfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* SIZE AND SPACE BETWEEN SOCIAL NETWORK ICONS */
+.facebook, .insta {
+  width: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* RESIZE DESCRIPTION FIELD */
+textarea {
+  resize: none;
+}
+
+/* FIELD SIZE */
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* SIZE FOOTER CATEGORY */
+.footerCategory{
+  width: 15%;
+}
+
+/* PADDING FORM FOOTER */
+.contact {
+  padding-right: 40px;
+}
+
+/* FOOTER TITLE */
+.h4 {
+  font-size: 15px;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+
+/* SPACE BETWEEN FIELD AND BUTTON */
+ .send {
+   padding-bottom: 15px;
+ }
+
+
+                      /* COPYRIGHT */
+
+.copyright{
+  text-align: center;
+  border-top: 0.05px solid #D3C37B;
+  padding: 10px;
+}
+
+
+
+                      /* CLEARFIX */
+.clearfix {
+  clear: both;
+}
